@@ -1,0 +1,223 @@
+/* Colors */
+/* line 49, ../sass/styles.scss */
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 55, ../sass/styles.scss */
+a {
+  color: steelblue;
+}
+
+/* line 58, ../sass/styles.scss */
+#main {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0 auto 0 auto;
+}
+
+/* line 66, ../sass/styles.scss */
+#main header {
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  height: 2.6em;
+  margin: 0;
+  padding-top: 1.1em;
+  padding-bottom: 1em;
+  box-shadow: 3px 3px 3px #cccccc;
+  background-color: black;
+  color: steelblue;
+}
+
+/* line 76, ../sass/styles.scss */
+#main header h1 {
+  float: left;
+  font-size: 2.3em;
+  font-weight: 800;
+  text-shadow: -1px -1px 1px #cccccc;
+}
+
+/* line 80, ../sass/styles.scss */
+#main header #status {
+  float: right;
+  padding-top: 0;
+}
+
+/* line 84, ../sass/styles.scss */
+#question_number {
+  text-align: right;
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+/* line 87, ../sass/styles.scss */
+#score {
+  text-align: right;
+  font-size: 0.8em;
+  font-weight: 800;
+}
+
+/* line 90, ../sass/styles.scss */
+.no_score {
+  display: none;
+}
+
+/* line 93, ../sass/styles.scss */
+.question {
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  height: 17em;
+  padding-top: 1.2em;
+  padding-bottom: 8em;
+  width: 70%;
+}
+
+/* line 99, ../sass/styles.scss */
+.question h2 {
+  font-size: 1.4em;
+  font-weight: 800;
+}
+
+/* line 103, ../sass/styles.scss */
+.question h2.show_answer {
+  font-weight: 600;
+}
+
+/* line 106, ../sass/styles.scss */
+.question h2 span {
+  font-weight: 800;
+}
+
+/* line 109, ../sass/styles.scss */
+.answers {
+  margin-top: 0.6em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  line-height: 1.2em;
+  float: right;
+}
+
+/* line 115, ../sass/styles.scss */
+.answer_radio {
+  display: none;
+}
+
+/* line 118, ../sass/styles.scss */
+.answer {
+  display: block;
+  padding: 0.8em;
+  font-size: 1.2em;
+}
+
+/* line 123, ../sass/styles.scss */
+.answer:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+/* line 127, ../sass/styles.scss */
+.answer_radio:checked + .answer {
+  background-color: #dddddd;
+  border-radius: 3px;
+}
+
+/* line 131, ../sass/styles.scss */
+.controls {
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.9em;
+}
+
+/* line 143, ../sass/styles.scss */
+#submit {
+  float: left;
+}
+
+/* line 148, ../sass/styles.scss */
+.mini_controls {
+  display: inline-block;
+  float: right;
+  margin-top: 0.2em;
+  font-size: 1.6em;
+}
+
+/* line 154, ../sass/styles.scss */
+#reset {
+  float: right;
+}
+
+/* line 157, ../sass/styles.scss */
+#controls_help {
+  padding-right: 0.6em;
+}
+
+/* line 160, ../sass/styles.scss */
+#controls_message h2 {
+  font-size: 1.6em;
+}
+
+/* line 163, ../sass/styles.scss */
+#controls_message ul {
+  margin-top: 1em;
+}
+
+/* line 166, ../sass/styles.scss */
+#controls_message p {
+  margin-top: 1em;
+  font-size: 0.7em;
+}
+
+/* line 170, ../sass/styles.scss */
+.overlay_message {
+  display: none;
+  padding: 1em;
+  background-color: steelblue;
+  color: white;
+}
+
+
+button {
+    border-top: 1px solid #96d1f8;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+    padding: 9.5px 19px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: white;
+    font-size: 18px;
+    font-family:'Lucida Grande', Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+button:hover {
+    border-top-color: #28597a;
+    background: #28597a;
+    color: #ccc;
+}
+button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+}

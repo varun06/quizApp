@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz App</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800' rel='stylesheet'/>
+        <link rel="stylesheet" href="reset.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.61.0-2013.06.06/jquery.blockUI.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <h1>Qu<span id="blink">:</span>z Time</h1>
+                <div id="status">
+                    <div id="question_number">1 of 10</div>
+                    <div id="score" class="no_score"></div>
+                </div>
+            </header>
+            <section class="question">
+                <img src="" alt="" />
+                <div class="answers">
+                </div>
+            </section>
+            <section class="controls">
+                <button id="submit">Answer</button>
+                <button id="reset">Reset</button>
+            </section>
+        </div>
+        <div class="overlay_message" id="error_message">Please choose an answer</div>
+        <div class="overlay_message" id="controls_message">
+        </div>
+        <script type="text/template" id="answer_template">
+            <input class="answer_radio" type="radio" id="{{id}}" name="group" value="{{id}}">
+            <label class="answer" for="{{id}}">{{text}}</label>
+        </script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
