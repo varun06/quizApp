@@ -1,5 +1,6 @@
-/* Colors */
-/* line 49, ../sass/styles.scss */
+/*IMPORT OPEN SANS FONT FROM GOOGLE FONT*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
   position: absolute;
   width: 100%;
@@ -7,22 +8,19 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 55, ../sass/styles.scss */
 a {
   color: steelblue;
 }
 
-/* line 58, ../sass/styles.scss */
 #main {
   position: relative;
   box-sizing: border-box;
   width: 100%;
   min-width: 320px;
   min-height: 100%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
-/* line 66, ../sass/styles.scss */
 #main header {
   padding-left: 1.4em;
   padding-right: 1.4em;
@@ -31,11 +29,10 @@ a {
   padding-top: 1.1em;
   padding-bottom: 1em;
   box-shadow: 3px 3px 3px #cccccc;
-  background-color: black;
-  color: steelblue;
+  background-color: rgb(51, 43, 43);
+  color: saddlebrown;
 }
 
-/* line 76, ../sass/styles.scss */
 #main header h1 {
   float: left;
   font-size: 2.3em;
@@ -43,145 +40,90 @@ a {
   text-shadow: -1px -1px 1px #cccccc;
 }
 
-/* line 80, ../sass/styles.scss */
 #main header #status {
   float: right;
   padding-top: 0;
 }
 
-/* line 84, ../sass/styles.scss */
 #question_number {
   text-align: right;
   font-size: 1.3em;
   font-weight: 800;
 }
 
-/* line 87, ../sass/styles.scss */
 #score {
   text-align: right;
   font-size: 0.8em;
   font-weight: 800;
 }
 
-/* line 90, ../sass/styles.scss */
 .no_score {
   display: none;
 }
 
-/* line 93, ../sass/styles.scss */
+.container {
+  width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .question {
   padding-left: 1.4em;
-  padding-right: 1.4em;
   height: 17em;
   padding-top: 1.2em;
-  padding-bottom: 8em;
-  width: 70%;
+  padding-bottom: 5em;
+  text-align:center;
 }
 
-/* line 99, ../sass/styles.scss */
-.question h2 {
-  font-size: 1.4em;
-  font-weight: 800;
+.question img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
 }
 
-/* line 103, ../sass/styles.scss */
-.question h2.show_answer {
-  font-weight: 600;
-}
 
-/* line 106, ../sass/styles.scss */
-.question h2 span {
-  font-weight: 800;
-}
-
-/* line 109, ../sass/styles.scss */
 .answers {
   margin-top: 0.6em;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
+  padding-left: 1em;
   line-height: 1.2em;
-  float: right;
+  text-align:center;
 }
 
-/* line 115, ../sass/styles.scss */
 .answer_radio {
   display: none;
 }
 
-/* line 118, ../sass/styles.scss */
 .answer {
   display: block;
   padding: 0.8em;
   font-size: 1.2em;
 }
 
-/* line 123, ../sass/styles.scss */
 .answer:hover {
   background-color: #f2f2f2;
   cursor: pointer;
 }
 
-/* line 127, ../sass/styles.scss */
 .answer_radio:checked + .answer {
   background-color: #dddddd;
   border-radius: 3px;
 }
 
-/* line 131, ../sass/styles.scss */
-.controls {
-  padding-left: 1.4em;
-  padding-right: 1.4em;
-  position: absolute;
-  box-sizing: border-box;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40px;
-  margin-bottom: 0.5em;
-  padding-top: 0.5em;
-  padding-bottom: 0.9em;
-}
-
-/* line 143, ../sass/styles.scss */
-#submit {
-  float: left;
-}
-
-/* line 148, ../sass/styles.scss */
-.mini_controls {
-  display: inline-block;
-  float: right;
-  margin-top: 0.2em;
-  font-size: 1.6em;
-}
-
-/* line 154, ../sass/styles.scss */
-#reset {
-  float: right;
-}
-
-/* line 157, ../sass/styles.scss */
-#controls_help {
-  padding-right: 0.6em;
-}
-
-/* line 160, ../sass/styles.scss */
 #controls_message h2 {
   font-size: 1.6em;
 }
 
-/* line 163, ../sass/styles.scss */
 #controls_message ul {
   margin-top: 1em;
 }
 
-/* line 166, ../sass/styles.scss */
 #controls_message p {
   margin-top: 1em;
   font-size: 0.7em;
 }
 
-/* line 170, ../sass/styles.scss */
 .overlay_message {
   display: none;
   padding: 1em;
@@ -190,34 +132,80 @@ a {
 }
 
 
-button {
-    border-top: 1px solid #96d1f8;
-    background: #65a9d7;
-    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
-    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
-    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
-    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
-    background: -o-linear-gradient(top, #3e779d, #65a9d7);
-    padding: 9.5px 19px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
-    color: white;
-    font-size: 18px;
-    font-family:'Lucida Grande', Helvetica, Arial, Sans-Serif;
-    text-decoration: none;
-    vertical-align: middle;
+/*FLAT BUTTON*/
+
+#content {
+  margin: 10px auto;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  padding-top: 0.25em;
+  padding-bottom: 3.9em;
+  text-align:center;
 }
-button:hover {
-    border-top-color: #28597a;
-    background: #28597a;
-    color: #ccc;
+
+aside {
+  margin: 20px 0;
+  line-height: 34px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
 }
-button:active {
-    border-top-color: #1b435e;
-    background: #1b435e;
+aside:hover {
+  top: -1px;
+}
+aside:active {
+  top: 1px;
+}
+aside.arrow {
+  background-color: #8d96ed;
+}
+aside.arrow:after, aside.arrow:before {
+  border-width: 17px 0 17px 17px;
+}
+aside.arrow:before {
+  border-color: #8d96ed transparent;
+  left: -17px;
+}
+aside.arrow:after {
+  border-color: transparent #8d96ed;
+  right: -17px;
+}
+
+aside.diamond {
+  background-color: #c6ed8d;
+}
+aside.diamond:after, aside.diamond:before {
+  border-color: transparent #c6ed8d;
+}
+aside.diamond:before {
+  left: -17px;
+  border-width: 17px 17px 17px 0;
+}
+aside.diamond:after {
+  right: -17px;
+  border-width: 17px 0 17px 17px;
+}
+
+aside:before, aside:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0;
+}
+
+#submit {
+  float: left;
+}
+
+#reset {
+  float: right;
 }
