@@ -5,24 +5,28 @@
 /* PHONE - 767px */
 @media screen and (max-width: 460px) {
   #main header {
-  padding:  0 0.8em 0 0.8em;
-  height: 1.8em;
+    padding:  0 0.8em 0 0.8em;
+    height: 1.8em;
   }
 
   #main header h1 {
-  font-size: 0.5em;
+    font-size: 0.5em;
   }
 
   #question_number {
-  font-size: 0.6em;
+    font-size: 0.6em;
   }
 
   #score {
-  font-size: 0.4em;
+    font-size: 0.4em;
   }
 
   .container {
-  width: 300px;
+    width: 300px;
+  }
+
+  #result {
+    font-size: 3em;
   }
 }
 
