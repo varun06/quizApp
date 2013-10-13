@@ -71,25 +71,26 @@ a {
 
 .question {
   padding-left: 1.4em;
-  height: 17em;
+  height: 15em;
   padding-top: 1.2em;
   padding-bottom: 5em;
   text-align:center;
 }
 
 .question img {
-  width: 300px;
-  height: 300px;
+  width: 19em;
+  height: 19em;
   margin: 0 auto;
 }
 
 .answers {
-  margin-top: 0.6em;
+  margin-top: 0.3em;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   padding-left: 1em;
-  line-height: 1.2em;
+  line-height: 1em;
   text-align:center;
+  font-size: 1.2em;
 }
 
 .answer_radio {
@@ -139,6 +140,7 @@ a {
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 /*FLAT BUTTON*/
