@@ -3,41 +3,50 @@
 @viewport { width: device-width; }
 
 /* PHONE - 767px */
-@media screen and (max-width: 460px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   #main header {
-    padding:  0 0.8em 0 0.8em;
+    padding:  0 0.5em;
     height: 1.8em;
   }
 
   #main header h1 {
-    font-size: 0.5em;
+    font-size: 1em;
   }
 
   #question_number {
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
 
   #score {
-    font-size: 0.4em;
+    font-size: 0.6em;
   }
 
   .container {
-    width: 300px;
+    width: 100%;
   }
 
   #result {
     font-size: 3em;
   }
+  
+  .question img {
+    width: 92%;
+  }
+  
+  .answers {
+    font-size: 1em;
+    width: 90%;
+  }
 }
 
 /*TABLET*/
-@media screen and (max-width: 760px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   #main header {
-  height: 1.6em;
+  height: 2.2em;
   }
 
   #main header h1 {
-  font-size: 1.2em;
+  font-size: 1.6em;
   }
 
   #question_number {

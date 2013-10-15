@@ -1,10 +1,14 @@
 /*IMPORT OPEN SANS FONT FROM GOOGLE FONT*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-body {
+html, body {
   position: absolute;
   width: 100%;
   height: 100%;
+  padding: 0;
+  margin: 0;
+  /* min-width: 320px; */
+  /* max-width: 1425px; */
   font-family: "Open Sans", sans-serif;
 }
 
@@ -12,6 +16,7 @@ body {
   position: relative;
   box-sizing: border-box;
   width: 100%;
+  height: 100%;
   min-width: 320px;
   min-height: 100%;
   margin: 0 auto;
@@ -21,7 +26,7 @@ body {
 #main header {
   padding-left: 1.4em;
   padding-right: 1.4em;
-  height: 2.6em;
+  height: 1.6em;
   margin: 0;
   padding-top: 1.1em;
   padding-bottom: 1em;
@@ -32,7 +37,7 @@ body {
 
 #main header h1 {
   float: left;
-  font-size: 2.3em;
+  font-size: 1.8em;
   font-weight: 800;
   text-shadow: -1px -1px 1px #cccccc;
 }
@@ -44,7 +49,7 @@ body {
 
 #question_number {
   text-align: right;
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: 800;
 }
 
@@ -61,16 +66,19 @@ body {
 /*CONTAINER FOR PICTURE AND QUESTION*/
 .container {
   width: 600px;
+  height: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .question {
-  padding-left: 1.4em;
-  height: 15em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  /* height: 100%; */
   padding-top: 1.2em;
-  padding-bottom: 5em;
+  padding-bottom: 2em;
   text-align:center;
+  width: 100%;
 }
 
 .question img {
@@ -82,11 +90,13 @@ body {
 .answers {
   margin-top: 0.3em;
   padding-top: 0.3em;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.2em;
   padding-left: 1em;
   line-height: 1em;
   text-align:center;
   font-size: 1.2em;
+  height: 300px;
+  width: 100%;
 }
 
 .answer_radio {
@@ -110,26 +120,6 @@ body {
   border-radius: 3px;
 }
 
-#controls_message h2 {
-  font-size: 1.6em;
-}
-
-#controls_message ul {
-  margin-top: 1em;
-}
-
-#controls_message p {
-  margin-top: 1em;
-  font-size: 0.7em;
-}
-
-.overlay_message {
-  display: none;
-  padding: 1em;
-  background-color: red;
-  color: white;
-}
-
 /*RESULT PAGE TEXT*/
 #result {
   font-size: 4.5em;
@@ -142,13 +132,14 @@ body {
 /*FLAT BUTTON*/
 
 #content {
-  margin: 1px auto;
+  /* margin: 1px auto; */
   position: relative;
-  bottom: 0;
-  left: 0;
-  height: 2em;
-  padding: 0.2em 0;
+  /* bottom: 0; */
+  /* left: 0; */
+  height: 3em;
+  /* padding: 0.1em 0; */
   width: 100%;
+  overflow: hidden;
 }
 
 aside {
