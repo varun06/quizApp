@@ -2,7 +2,7 @@
 @-ms-viewport { width:device-width; }
 @viewport { width: device-width; }
 
-/* PHONE - 767px */
+/* PHONE - 320px */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   #main header {
     padding:  0 0.5em;
@@ -28,11 +28,11 @@
   #result {
     font-size: 3em;
   }
-  
+
   .question img {
     width: 92%;
   }
-  
+
   .answers {
     font-size: 1em;
     width: 90%;

@@ -13,8 +13,10 @@
         resetCounter = 0,
         scoreNode = $('#score'),
         actionButton = $('#submit'),
+        resetButton = $('#reset')
         answersBlock = $('.answers'),
         questionTitle = $('.question img'),
+        questionBlock = $('.question'),
         showResult = $('#result'),
         errorMessage = $('#error_message'),
         questionNumber = $('#question_number'),
@@ -44,19 +46,18 @@
                 quizOver = false;
                 results = {count: 0, answers: [], currentScore: 0};
                 scoreNode.addClass('no_score').text('');
-                showResult.css('display', 'none');
-                questionTitle.show();
-                answersBlock.show();
+                questionBlock.show();
                 nextQuestion();
             }
     };
     //This function handle the results
     var showResults = function() {
-            answersBlock.hide();
-            questionTitle.css('display','none');
+            answersBlock.empty();
+            questionBlock.hide();
             showResult.text('You answered ' + results.currentScore + '% of '
                 + 'the questions correctly.');
             quizOver = true;
+            showResult.show();
             actionButton.text('Play again');
     };
 
@@ -84,6 +85,7 @@
                 nextQuestion();
             } else if (action === 'Play again') {
                 resetQuiz();
+                showResult.hide();
             } else {
                 showResults();
             }
@@ -110,7 +112,7 @@
                 actionButton.text('Next question');
             }
     };
-    //This funciton bring up the next question on page
+    //This function bring up the next question on page
     var nextQuestion = function() {
             var questionDetails = questions[counter];
             questionNumber.text((counter+1) + ' of ' + questions.length);
@@ -140,11 +142,11 @@
       });
     };
 
-    $('#reset').click(resetQuiz);
-    $('#submit').click(buttonAction);
+    resetButton.click(resetQuiz);
+    actionButton.click(buttonAction);
 
     // Load first question
     nextQuestion();
-    //Blink
+    //Blink the text
     blink('h1 #blink');
 }());
